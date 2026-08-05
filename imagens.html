@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,48 +8,66 @@
 </head>
 
 <style>
-
-   .img-pequena {
-     width: 30%;
-     height: 50px;
-     object-fit: cover;
+    .img-pequena {
+        width: 150px;
+        height: 100px;
+        object-fit: cover;
     }
 
     .img-destaque {
-      height: 170px;
-      width: 200%;
-      object-fit: cover;
+        height: 170px;
+        width: 320px;
+        object-fit: cover;
+    }
+
+    /* imagens que são links para vídeos */
+    .video-link img {
+        width: 220px;
+        height: auto;
+        object-fit: cover;
     }
 
     img {
-      border-radius: 10px;
-      border: 2px dashed #d91515;
+        border-radius: 10px;
+        border: 2px dashed #d91515;
     }
 
     .div-imagens {
         margin-top: 30px;
         border: 2px solid #d91515;
         display: flex;
-        justify-content: space-between;
+        gap: 12px;
+        align-items: center;
     }
+
     body {
         background-color: #000000;
     }
-
 </style>
 
 <body>
 
-  <div class="div-imagens">
-    <img src="f1.jpg" alt="foto da F-250 Vermelha" class="img-destaque">
-  </div>
+    <div class="div-imagens">
+        <a class="video-link" href="https://www.youtube.com/watch?v=U8bo7ioY3FA" target="_blank">
+            <img src="f1.jpg" alt="foto da F-250 Vermelha" class="img-destaque">
+        </a>
+    </div>
 
-  <div class="div-imagens"> 
-   <img src="f2.jpg" alt="foto da dodge ram preta" class="img-pequena">
-   <img src="f3.jpg" alt="foto da S10 preta" class="img-pequena">
-   <img src="f4.jpg" alt="foto da saveiro da deboxe" class="img-pequena">   
-  </div>
-    
-    
+    <div class="div-imagens">
+        <a class="video-link" href="https://www.youtube.com/results?search_query=dodge+ram+3500" target="_blank">
+            <img src="f2.jpg" alt="foto da dodge ram preta" class="img-pequena">
+        </a>
+
+        <a class="video-link" href="https://www.youtube.com/results?search_query=s10+2024" target="_blank">
+            <img src="f3.jpg" alt="foto da S10 preta" class="img-pequena">
+        </a>
+
+        <a class="video-link" href="https://www.youtube.com/results?search_query=saveiro+deboxe" target="_blank">
+            <img src="f4.jpg" alt="foto da saveiro da deboxe" class="img-pequena">
+        </a>
+    </div>
+
+
 </body>
+
 </html>
