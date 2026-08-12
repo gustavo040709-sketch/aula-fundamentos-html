@@ -1,35 +1,137 @@
+```html
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Meu Perfil</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #e7ed3b;
+            font-family: "Roboto Slab", serif;
+            min-height: 100vh;
+        }
+
+        h1,
+        p {
+            padding: 10px;
+        }
+
+        h1 {
+            color: #222;
+        }
+
+        h2 {
+            padding: 10px;
+            color: #222;
+        }
+
+        img {
+            width: 250px;
+            border-radius: 30px;
+            display: block;
+            margin: 10px auto;
+        }
+
+        .bio {
+            background-color: #00e1ff;
+            padding: 25px;
+            border-radius: 30px;
+            width: 500px;
+            margin: 50px auto;
+            border: 5px dashed #008fa3;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        li {
+            padding: 7px;
+            margin-left: 25px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #003b44;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #000;
+            text-decoration: underline;
+        }
+
+        .logos {
+            width: 32px;
+            height: 32px;
+            display: inline-block;
+            vertical-align: middle;
+            margin: 5px;
+            border-radius: 8px;
+        }
+
+        .links {
+            margin-top: 20px;
+        }
+    </style>
 </head>
-
-<style>
-    .bio {
-          
-        width: 300px;
-        HEIGHT: 300px;
-        Border: 10px dashed;
-        border-color: #00e1ff; 
-        margin-left: 50px;
-        margin-top: 200px;
-        padding: 70px;
-    
-    }
-
-
-</style>
 
 <body>
 
     <div class="bio">
-        <p>Nome: Gustavo</p>
-        <p>Idade: 17 anos</p>
-        <p>Cidade: Piracicamirim</p>
+
+        <h1>Meu nome é Gustavo</h1>
+
+        <img src="https://www.yamaha-racing.com.br/wp-content/uploads/2023/05/Dylan-Ferrandis-Yamaha.jpg"
+            alt="Foto de motocross">
+
+        <p>Tenho 17 anos, sou estudante de TI.</p>
+        <p>Sou de Piracicaba - SP.</p>
+
+        <h2>Sobre mim</h2>
+
+        <ul>
+            <li>Gosto de programar</li>
+            <li>Gosto de jogar</li>
+        </ul>
+
+        <h2>Meus hobbies</h2>
+
+        <ul>
+            <li>Ir pro rancho</li>
+            <li>Mexer com carros</li>
+            <li>Motocross</li>
+            <li>Dirigir</li>
+        </ul>
+
+        <div class="links">
+
+            <a href="https://github.com/gustavo040709-sketch/aula-fundamentos-html.git"
+                target="_blank">
+                Meu GitHub
+            </a>
+
+            <img class="logos" src="github.png" alt="GitHub">
+
+            <br><br>
+
+            <a href="https://www.linkedin.com/in/gustavo-silva-040709/"
+                target="_blank">
+                Meu LinkedIn
+            </a>
+
+            <img class="logos" src="linkedin.png" alt="LinkedIn">
+
+        </div>
 
     </div>
-    
+
 </body>
+
 </html>
