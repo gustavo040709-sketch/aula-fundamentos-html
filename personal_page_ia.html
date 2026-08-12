@@ -1,0 +1,248 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Página Pessoal - Gustavo</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #111, #333);
+            color: white;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .foto {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #ddd;
+        }
+
+        .conteudo {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: rgba(255,255,255,0.1);
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .card h2 {
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            line-height: 1.6;
+            color: #ddd;
+        }
+
+        .especialidades {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .especialidade {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .especialidade h3 {
+            margin-bottom: 12px;
+        }
+
+        .especialidade a {
+            display: inline-block;
+            padding: 8px 14px;
+            margin-top: 10px;
+            background-color: #e00000;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .especialidade a:hover {
+            background-color: #ff3333;
+        }
+
+        .voltar {
+            display: block;
+            width: fit-content;
+            margin: 30px auto;
+            padding: 12px 25px;
+            background-color: white;
+            color: #111;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .voltar:hover {
+            background-color: #ddd;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            margin-top: 30px;
+            background-color: #111;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <!--
+        COLOQUE SUA FOTO NA MESMA PASTA DO ARQUIVO
+        E troque "foto.jpg" pelo nome da sua imagem.
+        -->
+        <img src="foto.jpg" alt="Foto de Gustavo" class="foto">
+
+        <h1>Gustavo</h1>
+
+        <p>
+            Estudante de Desenvolvimento e Tecnologia
+        </p>
+
+    </header>
+
+    <main class="conteudo">
+
+        <section class="card">
+
+            <h2>Sobre mim</h2>
+
+            <p>
+                Olá! Meu nome é Gustavo. Sou estudante e estou aprendendo
+                sobre programação, desenvolvimento web e tecnologia.
+                Este site foi desenvolvido como parte de uma atividade
+                utilizando ferramentas de Inteligência Artificial.
+            </p>
+
+        </section>
+
+        <section class="card">
+
+            <h2>Minhas especialidades</h2>
+
+            <div class="especialidades">
+
+                <div class="especialidade">
+                    <h3>HTML</h3>
+
+                    <p>
+                        Estruturação de páginas web.
+                    </p>
+
+                    <a href="https://www.youtube.com/results?search_query=playlist+curso+html"
+                       target="_blank">
+                        YouTube
+                    </a>
+                </div>
+
+                <div class="especialidade">
+                    <h3>CSS</h3>
+
+                    <p>
+                        Estilização e design de sites.
+                    </p>
+
+                    <a href="https://www.youtube.com/results?search_query=playlist+curso+css"
+                       target="_blank">
+                        YouTube
+                    </a>
+                </div>
+
+                <div class="especialidade">
+                    <h3>JavaScript</h3>
+
+                    <p>
+                        Interatividade e programação web.
+                    </p>
+
+                    <a href="https://www.youtube.com/results?search_query=playlist+curso+javascript"
+                       target="_blank">
+                        YouTube
+                    </a>
+                </div>
+
+                <div class="especialidade">
+                    <h3>Python</h3>
+
+                    <p>
+                        Lógica de programação e desenvolvimento.
+                    </p>
+
+                    <a href="https://www.youtube.com/results?search_query=playlist+curso+python"
+                       target="_blank">
+                        YouTube
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="card">
+
+            <h2>Meu objetivo</h2>
+
+            <p>
+                Continuar aprendendo programação e desenvolvimento,
+                criando projetos cada vez melhores e adquirindo
+                experiência na área de tecnologia.
+            </p>
+
+        </section>
+
+        <a href="index.html" class="voltar">
+            ← Voltar para o início
+        </a>
+
+    </main>
+
+    <footer>
+        <p>© 2026 - Gustavo | Projeto desenvolvido com auxílio de IA</p>
+    </footer>
+
+</body>
+</html>
+```
